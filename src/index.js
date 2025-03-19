@@ -3,6 +3,7 @@ import BusinessIcon from "@material-ui/icons/Business";
 import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount";
 import { FormattedMessage } from "@openimis/fe-core";
 import messages_en from "./translations/en.json";
+import messages_fr from "./translations/fr.json";
 import PolicyHoldersPage from "./pages/PolicyHoldersPage";
 import PolicyHolderPage from "./pages/PolicyHolderPage";
 import LegalFormPicker from "./pickers/LegalFormPicker";
@@ -42,7 +43,10 @@ const ROUTE_POLICY_HOLDER = "policyHolders/policyHolder";
 const ROUTE_POLICY_HOLDER_USERS = "policyHolderUsers";
 
 const DEFAULT_CONFIG = {
-    "translations": [{ key: "en", messages: messages_en }],
+    "translations": [
+        { key: "en", messages: messages_en },
+        { key: "fr", messages: messages_fr }
+    ],
     "reducers": [{ key: "policyHolder", reducer }],
     "refs": [
         { key: "policyHolder.LegalFormPicker", ref: LegalFormPicker },
